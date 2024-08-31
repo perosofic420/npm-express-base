@@ -19,8 +19,14 @@ for (const folder of apiFolders) {
         case "POST":
             express.post(url, execute);
             break;
+        case "PUT":
+            express.put(url, execute);
+            break;
         case "DELETE":
             express.delete(url, execute);
+            break;
+        case "PATCH":
+            express.patch(url, execute);
             break;
         }
     }
